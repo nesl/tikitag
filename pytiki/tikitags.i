@@ -23,6 +23,17 @@
 /* tikitag.i*/
 %module pytiki
 %{
+extern char INIT1[15];
+extern char INIT2[15];
+extern char INIT3[21];
+extern char INIT4[15];
+extern char status1[10];
+extern char power_up[10];
+extern char power_down[10];
+extern char abort_pipe[10];
+extern char poll[20];
+extern char get1[15];
+
 extern int tiki_init(void);
 extern int tiki_config(int time, int rate);
 extern int tiki_close(void);
@@ -31,6 +42,18 @@ extern unsigned long long tiki_getID1();
 extern unsigned long long tiki_getID2();
 extern int tiki_getReaderID();
 %}
+extern char INIT1[15];
+extern char INIT2[15];
+extern char INIT3[21];
+extern char INIT4[15];
+extern char status1[10];
+extern char power_up[10];
+extern char power_down[10];
+extern char abort_pipe[10];
+extern char poll[20];
+extern char get1[15];
+
+
 extern int tiki_init(void);
 extern int tiki_config(int time, int rate);
 extern int tiki_close(void);
